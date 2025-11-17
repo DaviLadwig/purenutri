@@ -1,32 +1,96 @@
-header{
+/* HEADER PRINCIPAL */
+.header {
     width: 100%;
+    padding: 18px 30px;
+    background: #7a4d9a;
+    border-bottom: 1px solid #eee;
     display: flex;
-    background-color: #7a4d9a;
-    padding: 20px 10px;
-}
-
-header img{
-    width: 250px;
-}
-
-nav{
-    width: 90%;
-    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    gap: 40px;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    font-family: 'Poppins', sans-serif;
 }
 
-nav a{
-    font-size: 1.5rem;
+/* LOGO */
+.logo img{
+    width: 250px;
+    
+}
+
+/* LINKS DO MENU DESKTOP */
+.nav {
+    display: flex;
+    gap: 30px;
+    margin-right: 100px;
+}
+
+.nav a {
     text-decoration: none;
-    opacity: 0.8;
-    transition: 0.3s;
-    color: white;
+    color: #fff;
+    font-size: 1.3rem;
+    transition: .3s;
 }
 
-nav a:hover{
+.nav a:hover {
     color: #a6dc66;
-    opacity: 1;
-    transition: 0.4s;
+}
+
+/* BOTÃO HAMBÚRGUER */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 28px;
+    height: 3px;
+    background: #7a4d9a;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+/* MOBILE */
+@media (max-width: 850px) {
+    .nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 220px;
+        height: 100vh;
+        background: #7a4d9a;
+        flex-direction: column;
+        padding: 80px 20px;
+        gap: 25px;
+        transition: .4s ease;
+    }
+
+    .nav a {
+        color: #fff;
+        font-size: 18px;
+    }
+
+    .nav.open {
+        right: 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    /* animação transformar hambúrguer em X */
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(6px, 6px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+    }
 }

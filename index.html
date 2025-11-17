@@ -9,16 +9,27 @@
 </head>
 
 <body>
-    <header>
-        <img src="images/pure_nutri.png" alt="pure nutri logo">
-        <nav>
-            <a href="">Inicio</a>
-            <a href="">Sobre</a>
-            <a href="">Planos</a>
-            <a href="">Suporte</a>
-            <a href="">FAQ</a>
+    <header class="header">
+        <div class="logo">
+            <img src="images/pure_nutri-removebg-preview.png" alt="logo pure nutri">
+        </div>
+
+        <nav class="nav" id="nav-menu">
+            <a href="#">Início</a>
+            <a href="#">Sobre</a>
+            <a href="#">Planos</a>
+            <a href="#">Depoimentos</a>
+            <a href="#">Contato</a>
         </nav>
+
+        <!-- Botão hambúrguer -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </header>
+
 
     <!--SECTION HERO-->
     <section class="hero">
@@ -145,141 +156,171 @@
 
     <!--CARDS PLANOS-->
 
-   <!-- Seção de Planos - Nova Versão com Cards Verticais Lado a Lado -->
-<section class="planos-section" style="padding: 60px 20px; background: #f9f9f9; font-family: 'Poppins', sans-serif;">
-    <h2 style="text-align: center; font-size: 34px; margin-bottom: 10px; font-weight: 700; color: #111;">Escolha o plano ideal para você</h2>
-    <p style="text-align: center; color: #555; margin-bottom: 40px; font-size: 18px;">
-        Acesso completo ao Nutri Pure para transformar sua jornada de forma saudável e sem abrir mão do que você ama.
-    </p>
+    <!-- Seção de Planos - Nova Versão com Cards Verticais Lado a Lado -->
+    <section class="planos-section"
+        style="padding: 60px 20px; background: #f9f9f9; font-family: 'Poppins', sans-serif;">
+        <h2 style="text-align: center; font-size: 34px; margin-bottom: 10px; font-weight: 700; color: #111;">Escolha o
+            plano ideal para você</h2>
+        <p style="text-align: center; color: #555; margin-bottom: 40px; font-size: 18px;">
+            Acesso completo ao Nutri Pure para transformar sua jornada de forma saudável e sem abrir mão do que você
+            ama.
+        </p>
 
-    <div class="cards-container" style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+        <div class="cards-container" style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
 
-        <!-- Card Mensal -->
-        <div class="card-plano" style="width: 320px; background: #fff; border-radius: 20px; padding: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); transition: .3s;">
-            <h3 style="font-size: 24px; font-weight: 700;">Plano Mensal</h3>
-            <p style="font-size: 30px; font-weight: 700; margin: 10px 0;">R$ 19,90<span style="font-size: 18px; font-weight: 400;">/mês</span></p>
-            <ul style="list-style: none; padding: 0; margin: 20px 0; line-height: 28px;">
-                <li>✔ Acesso completo ao app</li>
-                <li>✔ Receitas personalizadas</li>
-                <li>✔ Acompanhamento diário</li>
-                <li>✔ Lista inteligente de compras</li>
-            </ul>
-            <button style="width: 100%; background: #42b45f; padding: 14px; color: white; border: none; border-radius: 10px; font-size: 18px; cursor: pointer;">Assinar Agora</button>
-        </div>
-
-        <!-- Card Trimestral -->
-        <div class="card-plano destaque" style="width: 320px; background: #e8ffe9; border-radius: 20px; padding: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border: 2px solid #42b45f; transform: scale(1.05); transition: .3s;">
-            <div style="background: #42b45f; color: white; padding: 6px 14px; border-radius: 20px; font-size: 14px; display: inline-block; margin-bottom: 10px;">Mais Popular</div>
-            <h3 style="font-size: 24px; font-weight: 700;">Plano Trimestral</h3>
-            <p style="font-size: 30px; font-weight: 700; margin: 10px 0;">R$ 49,90<span style="font-size: 18px; font-weight: 400;">/trimestre</span></p>
-            <ul style="list-style: none; padding: 0; margin: 20px 0; line-height: 28px;">
-                <li>✔ Tudo do plano mensal</li>
-                <li>✔ Relatórios semanais avançados</li>
-                <li>✔ Suporte prioritário</li>
-                <li>✔ Acesso a receitas exclusivas</li>
-            </ul>
-            <button style="width: 100%; background: #42b45f; padding: 14px; color: white; border: none; border-radius: 10px; font-size: 18px; cursor: pointer;">Assinar Agora</button>
-        </div>
-
-        <!-- Card Anual -->
-        <div class="card-plano" style="width: 320px; background: #fff; border-radius: 20px; padding: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); transition: .3s;">
-            <h3 style="font-size: 24px; font-weight: 700;">Plano Anual</h3>
-            <p style="font-size: 30px; font-weight: 700; margin: 10px 0;">R$ 149,90<span style="font-size: 18px; font-weight: 400;">/ano</span></p>
-            <ul style="list-style: none; padding: 0; margin: 20px 0; line-height: 28px;">
-                <li>✔ Tudo do plano trimestral</li>
-                <li>✔ Acesso antecipado a novidades</li>
-                <li>✔ Benefícios exclusivos</li>
-                <li>✔ Economia máxima</li>
-            </ul>
-            <button style="width: 100%; background: #42b45f; padding: 14px; color: white; border: none; border-radius: 10px; font-size: 18px; cursor: pointer;">Assinar Agora</button>
-        </div>
-
-    </div>
-</section>
-
-<!-- Estilos extras -->
-<style>
-.card-plano:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 6px 25px rgba(0,0,0,0.15);
-}
-.destaque:hover {
-    transform: scale(1.07) translateY(-6px);
-}
-</style>
-
-<!-- Seção Download do App -->
-<section class="baixar-app" style="padding: 70px 20px; text-align: center; background: #ffffff; font-family: 'Poppins', sans-serif;">
-    <h2 style="font-size: 32px; font-weight: 700; margin-bottom: 10px; color: #111;">Baixe o Nutri Pure</h2>
-    <p style="font-size: 18px; color: #555; margin-bottom: 30px;">Tenha o controle da sua alimentação na palma da mão.</p>
-
-    <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-        <!-- Botão Play Store -->
-        <a href="#" style="display: inline-block;">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" style="height: 60px; cursor: pointer; transition: .3s;">
-        </a>
-
-        <!-- Botão Apple Store -->
-        <a href="#" style="display: inline-block;">
-            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store" style="height: 60px; cursor: pointer; transition: .3s;">
-        </a>
-    </div>
-</section>
-
-<style>
-.baixar-app img:hover {
-    transform: scale(1.07);
-}
-</style>
-
-
-<!-- Footer -->
-<footer style="background: #7a4d9a; padding: 60px 20px; color: #fff; font-family: 'Poppins', sans-serif; margin-top: 60px;">
-
-    <div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 40px;">
-
-        <!-- Logo + descrição -->
-        <div style="flex: 1 1 250px;">
-            <h2 style="font-size: 26px; font-weight: 700; margin-bottom: 10px;">Nutri Pure</h2>
-            <p style="line-height: 26px; color: #f0e6f7;">Seu app de nutrição saudável para transformar sua rotina sem abrir mão do sabor. Receitas, planos e acompanhamento diário.</p>
-        </div>
-
-        <!-- Links rápidos -->
-        <div style="flex: 1 1 200px;">
-            <h3 style="font-size: 20px; margin-bottom: 12px;">Links</h3>
-            <ul style="list-style: none; padding: 0; line-height: 32px;">
-                <li><a href="#" style="color: #fff; text-decoration: none;">Início</a></li>
-                <li><a href="#" style="color: #fff; text-decoration: none;">Sobre</a></li>
-                <li><a href="#" style="color: #fff; text-decoration: none;">Planos</a></li>
-                <li><a href="#" style="color: #fff; text-decoration: none;">Contato</a></li>
-            </ul>
-        </div>
-
-        <!-- Redes sociais -->
-        <div style="flex: 1 1 200px;">
-            <h3 style="font-size: 20px; margin-bottom: 12px;">Siga-nos</h3>
-            <div style="display: flex; gap: 15px;">
-                <a href="#" style="color: #fff; font-size: 26px; text-decoration: none;">📘</a>
-                <a href="#" style="color: #fff; font-size: 26px; text-decoration: none;">📷</a>
-                <a href="#" style="color: #fff; font-size: 26px; text-decoration: none;">🎥</a>
+            <!-- Card Mensal -->
+            <div class="card-plano"
+                style="width: 320px; background: #fff; border-radius: 20px; padding: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); transition: .3s;">
+                <h3 style="font-size: 24px; font-weight: 700;">Plano Mensal</h3>
+                <p style="font-size: 30px; font-weight: 700; margin: 10px 0;">R$ 19,90<span
+                        style="font-size: 18px; font-weight: 400;">/mês</span></p>
+                <ul style="list-style: none; padding: 0; margin: 20px 0; line-height: 28px;">
+                    <li>✔ Acesso completo ao app</li>
+                    <li>✔ Receitas personalizadas</li>
+                    <li>✔ Acompanhamento diário</li>
+                    <li>✔ Lista inteligente de compras</li>
+                </ul>
+                <button
+                    style="width: 100%; background: #42b45f; padding: 14px; color: white; border: none; border-radius: 10px; font-size: 18px; cursor: pointer;">Assinar
+                    Agora</button>
             </div>
-        </div>
 
-        <!-- Download -->
-        <div style="flex: 1 1 250px;">
-            <h3 style="font-size: 20px; margin-bottom: 12px;">Baixe o App</h3>
-            <div style="display: flex; flex-direction: column; gap: 12px;">
-                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" style="height: 55px;"></a>
-                <a href="#"><img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" style="height: 55px;"></a>
+            <!-- Card Trimestral -->
+            <div class="card-plano destaque"
+                style="width: 320px; background: #e8ffe9; border-radius: 20px; padding: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border: 2px solid #42b45f; transform: scale(1.05); transition: .3s;">
+                <div
+                    style="background: #42b45f; color: white; padding: 6px 14px; border-radius: 20px; font-size: 14px; display: inline-block; margin-bottom: 10px;">
+                    Mais Popular</div>
+                <h3 style="font-size: 24px; font-weight: 700;">Plano Trimestral</h3>
+                <p style="font-size: 30px; font-weight: 700; margin: 10px 0;">R$ 49,90<span
+                        style="font-size: 18px; font-weight: 400;">/trimestre</span></p>
+                <ul style="list-style: none; padding: 0; margin: 20px 0; line-height: 28px;">
+                    <li>✔ Tudo do plano mensal</li>
+                    <li>✔ Relatórios semanais avançados</li>
+                    <li>✔ Suporte prioritário</li>
+                    <li>✔ Acesso a receitas exclusivas</li>
+                </ul>
+                <button
+                    style="width: 100%; background: #42b45f; padding: 14px; color: white; border: none; border-radius: 10px; font-size: 18px; cursor: pointer;">Assinar
+                    Agora</button>
             </div>
+
+            <!-- Card Anual -->
+            <div class="card-plano"
+                style="width: 320px; background: #fff; border-radius: 20px; padding: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); transition: .3s;">
+                <h3 style="font-size: 24px; font-weight: 700;">Plano Anual</h3>
+                <p style="font-size: 30px; font-weight: 700; margin: 10px 0;">R$ 149,90<span
+                        style="font-size: 18px; font-weight: 400;">/ano</span></p>
+                <ul style="list-style: none; padding: 0; margin: 20px 0; line-height: 28px;">
+                    <li>✔ Tudo do plano trimestral</li>
+                    <li>✔ Acesso antecipado a novidades</li>
+                    <li>✔ Benefícios exclusivos</li>
+                    <li>✔ Economia máxima</li>
+                </ul>
+                <button
+                    style="width: 100%; background: #42b45f; padding: 14px; color: white; border: none; border-radius: 10px; font-size: 18px; cursor: pointer;">Assinar
+                    Agora</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Estilos extras -->
+    <style>
+        .card-plano:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .destaque:hover {
+            transform: scale(1.07) translateY(-6px);
+        }
+    </style>
+
+    <!-- Seção Download do App -->
+    <section class="baixar-app"
+        style="padding: 70px 20px; text-align: center; background: #ffffff; font-family: 'Poppins', sans-serif;">
+        <h2 style="font-size: 32px; font-weight: 700; margin-bottom: 10px; color: #111;">Baixe o Nutri Pure</h2>
+        <p style="font-size: 18px; color: #555; margin-bottom: 30px;">Tenha o controle da sua alimentação na palma da
+            mão.</p>
+
+        <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+            <!-- Botão Play Store -->
+            <a href="#" style="display: inline-block;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                    alt="Google Play" style="height: 60px; cursor: pointer; transition: .3s;">
+            </a>
+
+            <!-- Botão Apple Store -->
+            <a href="#" style="display: inline-block;">
+                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                    alt="App Store" style="height: 60px; cursor: pointer; transition: .3s;">
+            </a>
+        </div>
+    </section>
+
+    <style>
+        .baixar-app img:hover {
+            transform: scale(1.07);
+        }
+    </style>
+
+
+    <!-- Footer -->
+    <footer
+        style="background: #7a4d9a; padding: 60px 20px; color: #fff; font-family: 'Poppins', sans-serif; margin-top: 60px;">
+
+        <div
+            style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 40px;">
+
+            <!-- Logo + descrição -->
+            <div style="flex: 1 1 250px;">
+                <img src="images/pure_nutri-removebg-preview.png" alt="logo pure nutri" width="200px">
+                <p style="line-height: 26px; color: #f0e6f7;">Seu app de nutrição saudável para transformar sua rotina
+                    sem abrir mão do sabor. Receitas, planos e acompanhamento diário.</p>
+            </div>
+
+            <!-- Links rápidos -->
+            <div style="flex: 1 1 200px;">
+                <h3 style="font-size: 20px; margin-bottom: 12px;">Links</h3>
+                <ul style="list-style: none; padding: 0; line-height: 32px;">
+                    <li><a href="#" style="color: #fff; text-decoration: none;">Início</a></li>
+                    <li><a href="#" style="color: #fff; text-decoration: none;">Sobre</a></li>
+                    <li><a href="#" style="color: #fff; text-decoration: none;">Planos</a></li>
+                    <li><a href="#" style="color: #fff; text-decoration: none;">Contato</a></li>
+                </ul>
+            </div>
+
+            <!-- Redes sociais -->
+            <div style="flex: 1 1 200px;">
+                <h3 style="font-size: 20px; margin-bottom: 12px;">Siga-nos</h3>
+                <div style="display: flex; gap: 15px;">
+                    <a href="#" style="color: #fff; font-size: 26px; text-decoration: none;">📘</a>
+                    <a href="#" style="color: #fff; font-size: 26px; text-decoration: none;">📷</a>
+                    <a href="#" style="color: #fff; font-size: 26px; text-decoration: none;">🎥</a>
+                </div>
+            </div>
+
+            <!-- Download -->
+            <div style="flex: 1 1 250px;">
+                <h3 style="font-size: 20px; margin-bottom: 12px;">Baixe o App</h3>
+                <div style="display: flex; flex-direction: column; gap: 12px;">
+                    <a href="#"><img
+                            src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                            style="height: 55px;"></a>
+                    <a href="#"><img
+                            src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                            style="height: 55px;"></a>
+                </div>
+            </div>
+
         </div>
 
-    </div>
-
-    <div style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.3);">
-        <p style="margin: 0; font-size: 15px; color: #f5dfff;">© 2025 Nutri Pure — Todos os direitos reservados.</p>
-    </div>
-</footer>
+        <div
+            style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.3);">
+            <p style="margin: 0; font-size: 15px; color: #f5dfff;">© 2025 Nutri Pure — Todos os direitos reservados.</p>
+        </div>
+    </footer>
 
 
 

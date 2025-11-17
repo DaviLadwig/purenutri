@@ -1,8 +1,13 @@
 // MENU RESPONSIVO
 
-function toggleMenu() {
-document.getElementById('bubbleMenu').classList.toggle('active');
-}
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('nav-menu');
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navMenu.classList.toggle('open');
+});
+
 
 // HERO
 

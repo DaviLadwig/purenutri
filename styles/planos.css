@@ -82,3 +82,13 @@ transform: translateY(0);
 opacity: 1;
 }
 }
+
+
+.planos-card {
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.planos-card:hover {
+    transform: translateY(-12px) scale(1.03);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}

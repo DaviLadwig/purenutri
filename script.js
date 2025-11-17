@@ -1,12 +1,14 @@
 // MENU RESPONSIVO
 
 const hamburger = document.getElementById('hamburger');
-const navMenu = document.getElementById('nav-menu');
+const mobileNav = document.getElementById('mobileNav');
 
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
-    navMenu.classList.toggle('open');
+    mobileNav.classList.toggle('active');
 });
+
+
 
 
 // HERO

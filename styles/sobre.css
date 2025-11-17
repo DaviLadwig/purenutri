@@ -1,0 +1,71 @@
+/* ---------- SEÇÃO SOBRE ---------- */
+.sobre {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 10%;
+    gap: 50px;
+    background: #ffffff;
+}
+
+.sobre-content {
+    flex: 1;
+}
+
+.sobre h2 {
+    font-size: 2.5rem;
+    color: #1a1a2e;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.sobre p {
+    font-size: 1.15rem;
+    color: #444;
+    margin-bottom: 18px;
+    line-height: 1.6;
+}
+
+.sobre img{
+    width: 600px;
+    border-radius: 10px;
+}
+
+/* Reutilizando animações do hero */
+.animate-left,
+.animate-right {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.9s ease-out;
+}
+
+.animate-left.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.animate-right.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.animate-left {
+    transform: translateX(-60px);
+}
+
+.animate-right {
+    transform: translateX(60px);
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+    .sobre {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .mockup-about {
+        width: 240px;
+        height: 480px;
+    }
+}

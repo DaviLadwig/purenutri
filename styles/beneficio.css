@@ -1,0 +1,77 @@
+/* ------- SEÇÃO BENEFÍCIOS ------- */
+.beneficios {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 100px 10%;
+    background: #7a4d9a;
+    gap: 60px;
+}
+
+.beneficios-content {
+    flex: 1;
+}
+
+.beneficios h2 {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.checklist {
+    list-style: none;
+    padding: 0;
+}
+
+.checklist li {
+    display: flex;
+    align-items: center;
+    font-size: 1.15rem;
+    margin-bottom: 16px;
+    color: #fff;
+    line-height: 1.5;
+}
+
+.checklist li span {
+    display: inline-block;
+    margin-right: 12px;
+    font-weight: bold;
+    color: #47c774;
+    font-size: 1.3rem;
+}
+
+/* --- animações reutilizam as mesmas classes --- */
+.animate-left,
+.animate-right {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.9s ease-out;
+}
+
+.animate-left {
+    transform: translateX(-60px);
+}
+
+.animate-right {
+    transform: translateX(60px);
+}
+
+.animate-left.active,
+.animate-right.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+    .beneficios {
+        flex-direction: column;
+        text-align: left;
+        padding: 80px 8%;
+    }
+
+    .beneficios h2 {
+        text-align: center;
+    }
+}

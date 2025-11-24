@@ -10,7 +10,7 @@ header {
 }
 
 .logo img {
-    width: 250px;
+    width: 200px;
 
 }
 
@@ -58,8 +58,8 @@ header {
     top: 0;
     right: -300px;
     /* escondido */
-    width: 250px;
-    height: 70vh;
+    width: 150px;
+    height: 100vh;
     background: #7a4d9a;
     display: flex;
     flex-direction: column;
@@ -109,4 +109,6 @@ header {
     .hamburger {
         display: flex;
     }
+
+    
 }
